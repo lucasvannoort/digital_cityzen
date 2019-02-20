@@ -53,38 +53,68 @@
     "number" : "12",
     "primaryNav" : [
         {
-            "label": "About",
+            "label": "Documentaire",
             "url": "link.pages-about"
         },
         {
-            "label": "Blog",
+            "label": "Témoignages",
             "url": "link.pages-blog-index"
         },
         {
-            "label": "Contact",
+            "label": "Franc parlé",
             "url": "link.pages-contact"
         },
         {
-            "label": "Login",
+            "label": "Le gallerie",
+            "url": "link.pages-login"
+        }
+    ],
+    "signIn" : [
+        {
+            "label": "Connexion",
             "url": "link.pages-login"
         }
     ],
     "footerNav" : [
         {
-            "label": "About",
-            "url": "link.pages-about"
+            "label": "La gallerie",
+            "url": ""
         },
         {
-            "label": "Blog",
-            "url": "link.pages-blog-index"
+            "label": "Documentaire",
+            "url": ""
+        },
+        {
+            "label": "Témoignages",
+            "url": ""
+        },
+        {
+            "label": "Franc parlé",
+            "url": ""
+        },
+        {
+            "label": "A propos",
+            "url": ""
+        },
+        {
+            "label": "L'équipe",
+            "url": ""
+        },
+        {
+            "label": "Devenir contributeur",
+            "url": ""
         },
         {
             "label": "Contact",
-            "url": "link.pages-contact"
+            "url": ""
         },
         {
-            "label": "Login",
-            "url": "link.pages-login"
+            "label": "Mention légale",
+            "url": ""
+        },
+        {
+            "label": "Soumettre une image",
+            "url": ""
         }
     ],
     "url" : "#",
