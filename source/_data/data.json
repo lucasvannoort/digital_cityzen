@@ -24,7 +24,7 @@
             "alt": "16x9 Image"
         },
         "avatar" : {
-            "src" : "../../images/fpo_avatar.png",
+            "src" : "../../images/avatar.svg",
             "alt" : "Person Name"
         }
     },

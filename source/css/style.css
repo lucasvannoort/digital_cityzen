@@ -1073,7 +1073,7 @@ abbr {
   background:transparent;
   border: solid 2px var(--interface-2);
   padding: 10px 60px;
-  color: #181818;
+  color: var(--text1);
   margin-left: 6px;
   box-shadow: -3px 3px var(--interface-1);
   transition: all .3s ease-in-out;
@@ -1973,11 +1973,16 @@ progress::-webkit-progress-bar {
   border-radius:3px;
 }
 /* Conteneur interne (animé) */
-progress::progress-value {
+progress::-webkit-progress-value {
   z-index: -1;
-  background: -webkit-gradient(linear, left right, from(var(--declinaison-1)), to(var(--declinaison-4)));
-  background: -moz-linear-gradient(right, var(--declinaison-1), var(--declinaison-4));
-  background: -o-linear-gradient(var(--declinaison-1), var(--declinaison-4));
+  background-image: linear-gradient(to right, var(--declinaison-1), var(--declinaison-4));
+  background-size: 300px 50px;
+  border-radius:3px;
+  transition: width 1.5s ease;
+}
+progress::-moz-progress-bar {
+  z-index: -1;
+  background-image: linear-gradient(to right, var(--declinaison-1), var(--declinaison-4));
   background-size: 300px 50px;
   border-radius:3px;
   transition: width 1.5s ease;
