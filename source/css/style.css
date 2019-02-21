@@ -221,7 +221,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  * Body base styles
  */
 body {
-  background: #fff;
+  background: var(--interface-3);
   color: #000;
   font: 100%/1.5 "Quicksand", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -298,7 +298,7 @@ input:focus, textarea:focus {
 }
 
 input:disabled {
-  border-color:#181818;
+  border-color:var(--text1);
   background-color:#CCCCCC;
   color:#595959;
 }
@@ -422,7 +422,7 @@ input:checked + .slider:before {
   border-radius:3px;
 }
 
-/* On mouse-over, add a grey background color */
+/* On mouse-over, add a var(--interaction-desactive) background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
@@ -478,7 +478,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
+/* On mouse-over, add a var(--interaction-desactive) background color */
 .container:hover input[type="radio"] ~ .radiobtn {
   background-color: #ccc;
 }
@@ -636,7 +636,10 @@ h1 {
  */
 h2 {
   font-size: 36px;
-  color: #FF6565;
+}
+
+h2.color {
+  color: var(--text2);
 }
 
 /**
@@ -879,7 +882,7 @@ abbr {
  */
 .c-block-hero__headline {
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--interface-3);
   padding: 1rem;
   font-size: 2.6rem;
   transition: all 0.2s ease; }
@@ -891,6 +894,48 @@ abbr {
       width: 50%;
       border-radius: 6px; } }
   .c-block-hero:hover .c-block-hero__headline, .c-block-hero:focus .c-block-hero__headline {
+    background: #444444; }
+
+/**
+ * 1) Blocks are collections of text and/or images/media working together as a unit.
+ */
+/*------------------------------------*\
+  #BANNER BLOCK
+\*------------------------------------*/
+.c-block-banner {
+  display: block;
+  position: relative; }
+
+/**
+ * Hero Image
+ * 1) This is the primary hero image that runs full-bleed across the layout
+ */
+.c-block-banner__img {
+  display: block;
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover; }
+
+/**
+ * Hero Headline
+ * 1) This sits overtop of the hero image when space permits
+ */
+.c-block-banner__headline {
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--interface-3);
+  padding: 1rem;
+  font-size: 2.6rem;
+  transition: all 0.2s ease; }
+  @media all and (min-width: 50em) {
+    .c-block-banner__headline {
+      position: absolute;
+      top: 3rem;
+      left: 25%;
+      width: 50%;
+      border-radius: 6px;
+      text-align: center;
+      border-radius: 6px; } }
+  .c-block-banner:hover .c-block-banner__headline, .c-block-banner:focus .c-block-banner__headline {
     background: #444444; }
 
 /*------------------------------------*\
@@ -905,7 +950,7 @@ abbr {
   display: flex;
   transition: all 0.2s ease; }
   .c-block-media:hover .c-block-media__headline, .c-block-media:focus .c-block-media__headline {
-    color: #CEB5DB; }
+    color: var(--link); }
   .c-block-media--small {
     font-size: 0.875rem; }
 
@@ -930,7 +975,7 @@ abbr {
 
 .c-block-media__headline {
   margin-bottom: 0.2em;
-  color: #FF6565;
+  color: var(--interface-1);
   transition: all 0.2s ease; }
   .c-block-media--small .c-block-media__headline {
     font-size: 1rem; }
@@ -976,7 +1021,7 @@ abbr {
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--interface-3);
   padding: 0.5em;
   font-size: 1.4rem;
   transition: all 0.2s ease; }
@@ -996,7 +1041,7 @@ abbr {
   justify-content: center;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--interface-3);
   border-radius: 6px;
   padding: 1em 1em;
   text-align: center;
@@ -1004,7 +1049,7 @@ abbr {
   transition: all 0.2s ease; }
   .c-block-tile:hover, .c-block-tile:focus {
     background: rgba(0, 0, 0, 0.7);
-    color: #fff; }
+    color: var(--interface-3); }
   @media all and (min-width: 55rem) {
     .c-block-tile {
       padding: 4em 1em; } }
@@ -1096,7 +1141,7 @@ abbr {
 .c-btn-primary:disabled {
   background: #CCC;
   box-shadow: -3px 3px #444;
-  color: #181818;
+  color: var(--text1);
   cursor: not-allowed;
   transition: all .3s ease-in-out;
   border:none;
@@ -1212,7 +1257,7 @@ abbr {
   clear: both;
   overflow: hidden;
   background: #3b4a20;
-  color: #fff;
+  color: var(--interface-3);
   line-height: 1.2;
   padding: 1em 0; }
 
@@ -1263,7 +1308,7 @@ abbr {
   font-weight: bold;
   display: block;
   padding: 1rem 2rem 1rem 0;
-  color: #fff; }
+  color: var(--interface-3); }
   .c-footer-nav__link:hover, .c-footer-nav__link:focus {
     color: #a5a5a5; }
 
@@ -1283,7 +1328,7 @@ abbr {
     width: 100%;
     padding: 1em;
     box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
-    background: #fff;
+    background: var(--interface-3);
     z-index: 1; }
   @media all and (min-width: 29.75em) {
     .c-search-form {
@@ -1332,7 +1377,9 @@ abbr {
   margin-left: auto;
   display: flex;
   align-items: center;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  height: 100%;
+}
 
 /**
  * Nav toggle button
@@ -1373,7 +1420,7 @@ abbr {
 
 .c-logo-link {
   display: inline-block;
-  padding: 1rem 4.8rem; }
+  padding: 1rem 1.8rem; }
 
 /*------------------------------------*\
     #ICONS
@@ -1569,7 +1616,7 @@ abbr {
 .icon-play-box:before {
   padding: 0.25em;
   background: #808080;
-  color: #fff;
+  color: var(--interface-3);
   margin-left: -1.7rem;
   margin-right: 0.5em; }
 
@@ -1696,7 +1743,7 @@ abbr {
  */
 .alert--warning {
   color: #a59b15;
-  background: #fffecf; }
+  background: var(--interface-3)ecf; }
 
 /**
  * Info alert
@@ -1749,7 +1796,7 @@ abbr {
 */
 .c-overlay__intro {
   font-size: 1.5rem;
-  color: #fff; }
+  color: var(--interface-3); }
 
 /*------------------------------------*\
     #PRIMARY NAVIGATION
@@ -1767,7 +1814,7 @@ abbr {
     right: 0;
     box-shadow: -3px 3px 5px -2px rgba(0, 0, 0, 0.2);
     z-index: 2;
-    background: #fff; }
+    background: var(--interface-3); }
   @media all and (min-width: 46.8em) {
     .c-primary-nav {
       display: block;
@@ -1787,7 +1834,7 @@ abbr {
 /**
  * Nav Links
  */
-.c-primary-nav__link {
+li .c-primary-nav__link {
   color: #000000;
   font: "Quicksand";
   font-size: 18px;
@@ -1796,11 +1843,40 @@ abbr {
   margin-right: 3.875rem;
 }
 
+li:last-child .c-primary-nav__link {
+  margin-right: 9.375rem;
+}
+
+
 /**
  * Sign in
  */
 .c-sign-in {
   margin-right: 1rem;
+  background: var(--interface-1);
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  height: 100%;
+  float: right;
+}
+
+.c-sign-in span:first-child {
+  margin-left: 0.825rem;
+  font-size: 23px;
+}
+
+.c-sign-in span:last-child {
+  margin-right: 1rem;
+}
+
+.c-sign-in span {
+  margin-right: 0.625rem;
+  font-size: 12px;
+  color:var(--interface-3);
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 4.2rem;
 }
 
 /**
@@ -1969,7 +2045,7 @@ abbr {
 progress {
   -webkit-appearance: none;
   appearance: none;
-  background-color: grey;
+  background-color: var(--interaction-desactive);
   background-size: auto;
   width: 100%;
   max-width: 300px;

@@ -32,6 +32,10 @@
         "src": "../../images/fpo_square.png",
         "alt": "Square Image"
     },
+    "imgBanner" : {
+        "src": "../../images/fpo_banner.png",
+        "alt": "Banner Image"
+    },
     "imgHero" : {
         "src": "../../images/fpo_hero.png",
         "alt": "Hero Image"
@@ -65,13 +69,13 @@
             "url": "link.pages-contact"
         },
         {
-            "label": "Le gallerie",
+            "label": "La gallerie",
             "url": "link.pages-login"
         }
     ],
     "signIn" : [
         {
-            "label": "Connexion",
+            "label": "Se connecter",
             "url": "link.pages-login"
         }
     ],
@@ -136,6 +140,7 @@
     "textarea" : {
 	    "label" : "label"
     },
+    "banner": true,
     "hero": true,
     "alert": true,
     "latestPosts" : {

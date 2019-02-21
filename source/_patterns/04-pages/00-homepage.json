@@ -2,12 +2,12 @@
 	"title" : "Home Page",
 	"bodyClass": "home",
 	"emergency" : false,
-    "imgHero" : {
-  	  "src": "../../images/sample/hero-forest.jpg",
-      "alt": "Forest"
+    "imgBanner" : {
+  	  "src": "../../images/fpo_banner.png",
+      "alt": "Banner"
     },
     "headline" : {
-        "medium" : "Track your hikes. Challenge your friends. Get out there and start exploring."
+        "medium" : "Pour un monde plus gai !!! 🍆🍑👌"
     },
 	"toutList" : [
       {
