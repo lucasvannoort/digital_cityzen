@@ -40,6 +40,10 @@
         "src": "../../images/fpo_hero.png",
         "alt": "Hero Image"
     },
+    "imgPost" : {
+        "src": "../../images/post.jpg",
+        "alt": "Post Image"
+    },
     "imgLandscape" : {
         "src": "../../images/fpo_16x9.png",
         "alt": "Landscape Image"
@@ -57,12 +61,12 @@
     "number" : "12",
     "primaryNav" : [
         {
-            "label": "Documentaire",
-            "url": "link.pages-about"
-        },
-        {
             "label": "Témoignages",
             "url": "link.pages-blog-index"
+        },
+        {
+            "label": "Documentaire",
+            "url": "link.pages-about"
         },
         {
             "label": "Franc parlé",
@@ -75,16 +79,16 @@
     ],
     "secondaryNav" : [
         {
-            "label": "Documentaire",
-            "url": "link.pages-about",
-            "src" : "../../images/icon/1.svg",
-            "alt" : "Documentaire"
-        },
-        {
             "label": "Témoignages",
             "url": "link.pages-blog-index",
-            "src" : "../../images/icon/2.svg",
+            "src" : "../../images/icon/1.svg",
             "alt" : "Témoignages"
+        },
+        {
+            "label": "Documentaire",
+            "url": "link.pages-about",
+            "src" : "../../images/icon/2.svg",
+            "alt" : "Documentaire"
         },
         {
             "label": "Franc parlé",
@@ -105,7 +109,7 @@
             "url": "link.pages-login"
         }
     ],
-    "footerNav" : [
+    "footerNavSection1" : [
         {
             "label": "La gallerie",
             "url": ""
@@ -121,7 +125,9 @@
         {
             "label": "Franc parlé",
             "url": ""
-        },
+        }
+    ],
+    "footerNavSection2" : [
         {
             "label": "A propos",
             "url": ""
@@ -133,7 +139,9 @@
         {
             "label": "Devenir contributeur",
             "url": ""
-        },
+        }
+    ],
+    "footerNavSection3" : [
         {
             "label": "Contact",
             "url": ""
@@ -233,7 +241,6 @@
         ],
         "pagination" : false
     },
-
     "toutList": [
         { },
         { },
