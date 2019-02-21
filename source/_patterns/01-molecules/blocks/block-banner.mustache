@@ -2,5 +2,21 @@
 	{{> atoms-banner:c-block-banner__img }}
 
 	<h2 class="c-block-banner__headline">{{ headline.medium }}</h2>
+	<nav id="nav" class="c-secondary-nav">
+
+		<ul class="c-secondary-nav__list">
+
+			{{# secondaryNav }}
+			<li class="c-secondary-nav__item">
+				<a href="{{ url }}">
+					<img src="{{ src }}" alt="{{ alt }}" class="{{ styleModifier }}" />
+					<span class="c-secondary-nav__link">{{ label }}</span>
+				</a>
+			</li>
+			{{/ secondaryNav }}
+
+		</ul><!--end c-primary-nav__list-->
+
+	</nav><!--end c-primary-nav-->
 
 </div><!-- end c-block-banner-->

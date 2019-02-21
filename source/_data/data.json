@@ -73,6 +73,32 @@
             "url": "link.pages-login"
         }
     ],
+    "secondaryNav" : [
+        {
+            "label": "Documentaire",
+            "url": "link.pages-about",
+            "src" : "../../images/icon/1.svg",
+            "alt" : "Documentaire"
+        },
+        {
+            "label": "Témoignages",
+            "url": "link.pages-blog-index",
+            "src" : "../../images/icon/2.svg",
+            "alt" : "Témoignages"
+        },
+        {
+            "label": "Franc parlé",
+            "url": "link.pages-contact",
+            "src" : "../../images/icon/3.svg",
+            "alt" : "Franc parlé"
+        },
+        {
+            "label": "La gallerie",
+            "url": "link.pages-login",
+            "src" : "../../images/icon/4.svg",
+            "alt" : "La gallerie"
+        }
+    ],
     "signIn" : [
         {
             "label": "Se connecter",

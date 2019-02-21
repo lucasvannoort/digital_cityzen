@@ -925,14 +925,16 @@ abbr {
   color: var(--interface-3);
   padding: 1rem;
   font-size: 2.6rem;
-  transition: all 0.2s ease; }
+  font-family: "Noticia Text";
+  transition: all 0.2s ease;
+  line-height: 53px; }
   @media all and (min-width: 50em) {
     .c-block-banner__headline {
+      font-family: "Noticia Text";
       position: absolute;
       top: 3rem;
       left: 25%;
       width: 50%;
-      border-radius: 6px;
       text-align: center;
       border-radius: 6px; } }
   .c-block-banner:hover .c-block-banner__headline, .c-block-banner:focus .c-block-banner__headline {
@@ -1847,6 +1849,72 @@ li:last-child .c-primary-nav__link {
   margin-right: 9.375rem;
 }
 
+/*------------------------------------*\
+    #PRIMARY NAVIGATION
+\*------------------------------------*/
+/**
+ * Navigation tag
+ */
+.c-secondary-nav {
+  font-family: "Noticia Text";
+  position: absolute;
+  top: 12rem;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+}
+
+@media all and (min-width: 50em) {
+  .c-secondary-nav {
+    font-family: "Noticia Text";
+    position: absolute;
+    top: 12rem;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    border-radius: 6px;
+  }
+}
+
+.c-secondary-nav img {
+  height: 75%;
+  margin-bottom: 1rem;
+  display: block;
+  padding: 0 2rem;
+}
+
+/**
+ * Nav List
+ */
+.c-secondary-nav__list {
+  display: none; }
+  @media all and (min-width: 46.8em) {
+    .c-secondary-nav__list {
+      display: flex; } }
+  .c-secondary-nav--is-active .c-secondary-nav__list {
+    display: block; }
+
+/**
+ * Nav Items
+ */
+.c-secondary-nav__item {
+  width: 100%;
+  background: var(--interface-3);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/**
+ * Nav Links
+ */
+li .c-secondary-nav__link {
+  color: #D27FFF;
+  font: "Noticia Text";
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
 
 /**
  * Sign in
